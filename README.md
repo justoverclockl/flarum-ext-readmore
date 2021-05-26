@@ -12,13 +12,13 @@ A [Flarum](http://flarum.org) extension. Add a Read More button after X characte
 Install with composer:
 
 ```sh
-composer require jutoverclock/flarum-ext-readmore
+composer require justoverclock/flarum-ext-readmore
 ```
 
 ### Updating
 
 ```sh
-composer update jutoverclock/flarum-ext-readmore
+composer update justoverclock/flarum-ext-readmore
 php flarum cache:clear
 ```
 
