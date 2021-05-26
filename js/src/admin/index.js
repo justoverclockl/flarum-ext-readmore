@@ -8,4 +8,10 @@ app.initializers.add('justoverclock/flarum-ext-readmore', () => {
     label: app.translator.trans('flarum-ext-readmore.admin.charlenght'),
     help: app.translator.trans('flarum-ext-readmore.admin.charlenghtdesc'),
   });
+  app.extensionData.for('justoverclock-readmore').registerSetting({
+    setting: 'justoverclock-readmore.AlsoPost',
+    label: app.translator.trans('flarum-ext-readmore.admin.AlsoPost'),
+    help: app.translator.trans('flarum-ext-readmore.admin.AlsoPostdesc'),
+    type: 'boolean',
+  });
 });

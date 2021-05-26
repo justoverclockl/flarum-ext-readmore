@@ -24,4 +24,5 @@ return [
     new Extend\Locales(__DIR__.'/resources/locale'),
     (new Extend\Settings)
         ->serializeToForum('Lenght', 'justoverclock-readmore.lenght'),
+    (new Extend\Settings())->serializeToForum('AlsoPost', 'justoverclock-readmore.AlsoPost', 'boolval', false),
 ];
