@@ -1,6 +1,6 @@
 # ReadMore
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/jutoverclock/flarum-ext-readmore.svg)](https://packagist.org/packages/jutoverclock/flarum-ext-readmore) [![Total Downloads](https://img.shields.io/packagist/dt/jutoverclock/flarum-ext-readmore.svg)](https://packagist.org/packages/jutoverclock/flarum-ext-readmore)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/flarum-ext-readmore/v)](//packagist.org/packages/justoverclock/flarum-ext-readmore) [![Total Downloads](https://poser.pugx.org/justoverclock/flarum-ext-readmore/downloads)](//packagist.org/packages/justoverclock/flarum-ext-readmore)
 
 A [Flarum](http://flarum.org) extension. Add a Read More button after X character (settings available) only on Profile Page.
 
