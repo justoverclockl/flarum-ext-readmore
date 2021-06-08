@@ -17,7 +17,7 @@ export default function () {
           var hiddenStr = str.substring(max, $.trim(str).length);
           var ReadMore = app.translator.trans('flarum-ext-readmore.forum.readmore');
 
-          $(this).empty().html(subStr);
+          $(this).text(subStr);
           $(this).append(' <a href="javascript:void(0);" class="linkReadMore">' + ReadMore + '</a>');
           $(this).append('<span class="addText">' + hiddenStr + '</span>');
         }
@@ -34,14 +34,14 @@ export default function () {
         const max = app.forum.attribute('Lenght');
 
         $('.Post-body').each(function () {
-          var str = $(this).text();
+          var str = $(this).html();
 
           if ($.trim(str).length > max) {
             var subStr = str.substring(0, max);
             var hiddenStr = str.substring(max, $.trim(str).length);
             var ReadMore = app.translator.trans('flarum-ext-readmore.forum.readmore');
 
-            $(this).empty().html(subStr);
+            $(this).text(subStr);
             $(this).append(' <a href="javascript:void(0);" class="linkReadMore">' + ReadMore + '</a>');
             $(this).append('<span class="addText">' + hiddenStr + '</span>');
           }

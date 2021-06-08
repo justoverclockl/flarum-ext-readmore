@@ -4,15 +4,15 @@
   "keywords": [
     "flarum",
       "profile page",
-      "excerpts"
+      "read-more"
   ],
   "type": "flarum-extension",
   "license": "MIT",
   "require": {
-    "flarum/core": "^0.1.0-beta.16"
+    "flarum/core": "^1.0.0"
   },
   "require-dev": {
-    "flarum/testing": "^0.1.0-beta.16"
+    "flarum/testing": "^1.0.0"
   },
   "authors": [
     {
@@ -24,11 +24,6 @@
   "autoload": {
     "psr-4": {
       "Justoverclock\\ReadMore\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Justoverclock\\ReadMore\\Tests\\": "tests/"
     }
   },
   "extra": {
