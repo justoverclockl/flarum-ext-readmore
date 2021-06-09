@@ -34,7 +34,7 @@ export default function () {
         const max = app.forum.attribute('Lenght');
 
         $('.Post-body').each(function () {
-          var str = $(this).html();
+          var str = $(this).text();
 
           if ($.trim(str).length > max) {
             var subStr = str.substring(0, max);
