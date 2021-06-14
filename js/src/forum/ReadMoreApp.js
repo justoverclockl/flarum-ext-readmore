@@ -41,7 +41,7 @@ export default function () {
           var str = $(this).html();
 
           if (totalHeight > 500) {
-            var subStr = str.substring(10, max);
+            var subStr = str.substring(0, max);
             var hiddenStr = str.substring(max, $.trim(str).length);
 
             $(this).html(subStr);
