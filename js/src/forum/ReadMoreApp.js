@@ -37,15 +37,12 @@ export default function () {
         const totalHeight = document.getElementById('test').clientHeight
         const ReadMore = app.translator.trans('flarum-ext-readmore.forum.readmore');
 
-        console.info('total', totalHeight)
-
         $('div.Post-body').each(function () {
           var str = $(this).html();
 
           if (totalHeight > 500) {
-            var subStr = str.substring(0, max);
+            var subStr = str.substring(10, max);
             var hiddenStr = str.substring(max, $.trim(str).length);
-
 
             $(this).html(subStr);
             $(this).append('<a href="javascript:void(0);" class="linkReadMore">' + ReadMore + '</a>');
