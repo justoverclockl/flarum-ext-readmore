@@ -29,20 +29,26 @@ export default function () {
     });
   } else {
     if (app.forum.attribute('AlsoPost') === true) {
+
       $(document).ready(function () {
+        $('.Post-body').attr('id', 'test');
         // Limite caratteri settabile da pannello amministrazione
         const max = app.forum.attribute('Lenght');
+        const totalHeight = document.getElementById('test').clientHeight
+        const ReadMore = app.translator.trans('flarum-ext-readmore.forum.readmore');
 
-        $('.Post-body').each(function () {
-          var str = $(this).text();
+        console.info('total', totalHeight)
 
-          if ($.trim(str).length > max) {
+        $('div.Post-body').each(function () {
+          var str = $(this).html();
+
+          if (totalHeight > 500) {
             var subStr = str.substring(0, max);
             var hiddenStr = str.substring(max, $.trim(str).length);
-            var ReadMore = app.translator.trans('flarum-ext-readmore.forum.readmore');
 
-            $(this).text(subStr);
-            $(this).append(' <a href="javascript:void(0);" class="linkReadMore">' + ReadMore + '</a>');
+
+            $(this).html(subStr);
+            $(this).append('<a href="javascript:void(0);" class="linkReadMore">' + ReadMore + '</a>');
             $(this).append('<span class="addText">' + hiddenStr + '</span>');
           }
         });
